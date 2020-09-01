@@ -1,0 +1,5 @@
+mkdir  /persistence1 ;mkfs.ext4 /dev/sdc
+
+/dev/sdc        /persistence1   ext4    defaults                0 0
+
+rm -rf ./.terraform; ./01.init.sh; ./02.plan.sh
